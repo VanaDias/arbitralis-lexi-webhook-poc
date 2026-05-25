@@ -1,0 +1,27 @@
+{
+  "name": "arbitralis-lexi-webhook-poc",
+  "version": "1.0.0",
+  "description": "PoC de webhook nao-bloqueante para simular o fluxo da Lexi no WhatsApp.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fastify/sensible": "^6.0.3",
+    "fastify": "^5.6.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
